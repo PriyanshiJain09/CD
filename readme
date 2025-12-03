@@ -1,0 +1,8 @@
+lex ques.l
+yacc -d ques.y
+gcc lex.yy.c y.tab.c -o ques
+./ques
+
+lex que.l
+gcc lex.yy.c -o ques
+./ques
